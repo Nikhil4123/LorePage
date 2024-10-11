@@ -1,0 +1,229 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+h1, h3 {
+  text-align: center;
+  color: #f9d423;
+}
+
+p, a, button {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1.characters-section-heading {
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-links a {
+  color: #f9d423;
+  padding: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6) url('./assets/manhwa1 copy.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.animated-text {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out forwards, pulse 3s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-button {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #f9d423;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Character Section Styling */
+.character {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.character:hover {
+  transform: translateY(-15px) scale(1.02);
+}
+
+.character img {
+  width: 150px;
+  border-radius: 10%;
+  margin-right: 1rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.read-more-btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #f9d423;
+}
+
+/* Carousel Section Styling */
+.carousel-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  height: 500px;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #f9d423;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.prev {
+  color: #fff;
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Section Styling */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.con-input, .con-input-message, .con-btn {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.con-btn {
+  background: #ff6f61;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.con-btn:hover {
+  background-color: #f9d423;
+}
+
+/* Footer Styling */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #f9d423;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo-footer, .logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.logo-footer-p {
+  font-size: 0.8rem;
+}
